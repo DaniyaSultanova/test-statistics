@@ -1,0 +1,73 @@
+@import "@/styles/settings/colors.scss";
+
+.wrap {
+  background-color: $white;
+  border-radius: 6px;
+  width: 228px;
+  box-shadow: 0px 0px 15px 0px $tooltip-shadow;
+  padding: 12px 16px;
+}
+
+.date {
+  display: flex;
+  gap: 8px;
+  height: fit-content;
+  align-items: center;
+
+  &__img {
+    height: 16px;
+    box-shadow: 0px 4px 4px 0px $date-shadow;
+  }
+
+  &__description {
+    font-size: 12px;
+    width: 400;
+    line-height: 1.25;
+    color: $text;
+    align-self: center;
+  }
+}
+
+.line {
+  border: none;
+  border-top: 1px solid $border;
+  height: 0.1px;
+  margin: 12px 0;
+}
+
+.variation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px dashed $variation-border;
+  margin-bottom: 6px;
+
+  div {
+    display: flex;
+    gap: 10px;
+
+    span {
+      color: $variation-text;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.3;
+    }
+  }
+
+  span {
+    color: $text;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .crown {
+    width: 18px;
+    height: 18px;
+  }
+}

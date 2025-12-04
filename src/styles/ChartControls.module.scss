@@ -1,0 +1,41 @@
+@import "@/styles/settings/colors.scss";
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11px;
+
+  &__item {
+    display: flex;
+    gap: 8px;
+
+    &--select {
+      border: 1px solid $select-border;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 400;
+      height: 28px;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("@/assets/Vector.svg");
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      background-size: 14px;
+      padding-right: 30px;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    &--button {
+      border: 1px solid $border;
+      border-radius: 4px;
+      padding: 8px;
+      background-color: $white;
+      height: 27px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
