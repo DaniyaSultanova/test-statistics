@@ -16,7 +16,7 @@ type RawData = {
 
 type ChartPoint = {
   date: string;
-  [key: string]: string | null;
+  [key: string]: number | null | string;
 };
 
 export function prepareData(raw: RawData): ChartPoint[] {
@@ -37,7 +37,7 @@ export function prepareData(raw: RawData): ChartPoint[] {
       if (!visits || !conversions) {
         point[v.name] = null;
       } else {
-        point[v.name] = ((conversions / visits) * 100).toFixed(2);
+        point[v.name] = Number(((conversions / visits) * 100).toFixed(2));
       }
     });
     return point;
