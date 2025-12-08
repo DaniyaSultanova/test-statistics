@@ -25,6 +25,9 @@ const CustomSelect = ({
       cursor: "pointer",
       backgroundColor: "white",
       padding: "0",
+      "&:hover": {
+        borderColor: "#C7C5D0",
+      },
     }),
 
     multiValueLabel: (base: any) => ({
@@ -50,7 +53,8 @@ const CustomSelect = ({
     option: (base: any, state: { isFocused: any }) => ({
       ...base,
       fontSize: "12px",
-      backgroundColor: state.isFocused ? "#F0F0F5" : "white",
+      backgroundColor: state.isFocused ? "#0056b3" : "white",
+      color: state.isFocused ? "white" : "black",
     }),
   };
 
