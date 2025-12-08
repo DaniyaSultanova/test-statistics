@@ -13,6 +13,7 @@ import {
   ResponsiveContainer,
   Area,
 } from "recharts";
+import styles from "@/styles/Chart.module.scss"
 import { ALL_LINES } from "@/constants/Variations";
 import { COLORS } from "@/constants/Colors";
 import { useExportPng } from "@/hooks/useExportPng";
@@ -41,7 +42,7 @@ export default function Chart() {
   }, [theme]);
 
   return (
-    <div style={{ padding: "2%" }}>
+    <div className={styles["chart-wrapper"]}>
       <ChartControls
         selectedLines={selectedLines}
         setSelectedLines={setSelectedLines}

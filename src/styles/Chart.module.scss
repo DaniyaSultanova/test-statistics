@@ -1,0 +1,10 @@
+.chart-wrapper {
+  padding: 2%;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.chart-wrapper *:focus {
+  outline: none;
+}
