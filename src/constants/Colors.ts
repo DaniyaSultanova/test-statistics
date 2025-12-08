@@ -3,6 +3,6 @@ export const COLORS = (theme: "light" | "dark") => {
       theme === "light" ? "#46464F" : "#C7C5D0",
       "#4142EF",
       "#FF8346",
-      "red",
+      "#FF0000",
     ];
 }
