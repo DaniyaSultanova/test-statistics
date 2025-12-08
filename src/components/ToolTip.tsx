@@ -12,7 +12,7 @@ const CustomTooltip = ({
   active,
   payload,
 }: TooltipContentProps<any,any>) => {
-    if (!active || !payload ) return;
+    if (!active || !payload || payload.length === 0) return;
 
   const isVisible = active && payload && payload.length;
   const dateObj = new Date(payload[0].payload.date);
